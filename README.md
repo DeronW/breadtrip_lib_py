@@ -23,7 +23,10 @@ Please add this directory to your PYTHONPATH by add follow line to your .bashrc:
 
 安装
 
-    pip install -e git+git@github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip
+    pip install -e git+git@github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip 远程库为私有库
+
+
+    或 pip install -e git+https://github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip 远程库为公有库
 
 卸载
 
@@ -33,12 +36,15 @@ Please add this directory to your PYTHONPATH by add follow line to your .bashrc:
 
     pip install -e git+git@github.com:delongw/breadtrip_lib_py.git@{new_version}#egg=breadtrip
 
-注意:
+注意
 
 - 此代码库为breadtrip私用库,不应公开,不应在代码库中添加任何与环境相关配置,与项目相关配置,及与其它功能相关的key等.
 - 代码库中如果有依赖的库需要在setup.py文件中标识出来并指定版本
 - breadtrip包含若干python库,每一个库都会呗加入到当前的python环境变量中 *谨慎使用*
 - 当breadtrip需要更新时,应更新所有正式环境\开发环境的breadtrip版本, 正式环境更新python库后需要重新启动服务
+
+用pip通过github安装代码时需要当前系统安装git并且拥有远程代码库的权限,如果代码库为公开库则可以通过https协议来安装, 例如:
+
 
 #### 清除旧代码
 
