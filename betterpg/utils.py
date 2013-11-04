@@ -6,4 +6,4 @@ def make_query_string(params):
     for k, v in params.items():
         s.append("%s = %s" % (k, adapt(v)))
     return " and ".join(s)
-        
+

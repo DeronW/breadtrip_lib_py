@@ -1,5 +1,6 @@
 #coding: utf-8
-from psycopg2.extensions import adapt, register_adapter, AsIs
+from psycopg2.extensions import register_adapter, AsIs
+#from psycopg2.extensions import adapt
 
 class Point(object):
     """

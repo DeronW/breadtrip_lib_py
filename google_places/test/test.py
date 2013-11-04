@@ -9,7 +9,7 @@ proxies = {
 #    "https": "https://189.113.64.122:8080",
 }
 
-test_api_key = 'AIzaSyDuX29RScH_HjTlvyDGtjXRMqiaTlqn-rc'
+test_api_key = "replace this with your's"
 
 api = GooglePlaces(test_api_key)
 print api.nearby_search(39.45825, -0.3656816, language='zh_CN', proxies=proxies)

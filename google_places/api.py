@@ -42,7 +42,7 @@ class GooglePlaces(object):
         params.update(kwargs,location="%s,%s" % (latitude, longitude), key=self.key)
         params["sensor"] = str_bool(params["sensor"])
         params = dict((k, v) for k, v in params.iteritems() if v is not None)
-     
+
         logger.debug('Requesting google service...')
         r = requests.get(NEARBY_SEARCH_BASE_URL, params=params, proxies=proxies, timeout=TIMEOUT)
         ret = r.json

@@ -49,8 +49,8 @@ class BaseDB(object):
         statement = '''
         INSERT INTO %s (%s) VALUES (%s)
         ''' % (
-            table, 
-            " ,".join(item.keys()), 
+            table,
+            " ,".join(item.keys()),
             placeholders
         )
         self.execute(statement, item.values())

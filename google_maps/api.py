@@ -20,15 +20,15 @@ class GoogleMapsApi(object):
     def __init__(self):
         self.proxies = {}
 
-    def geocoding(self, address=None, latitude=None, longitude=None, components=None, sensor=False, 
+    def geocoding(self, address=None, latitude=None, longitude=None, components=None, sensor=False,
                         language='en_US'):
         """
         Google geocoding api(See also: https://developers.google.com/maps/documentation/geocoding/)
-        
+
         Args:
         ~~~~~
 
-        - adderss, String, The address that you want to geocode. 
+        - adderss, String, The address that you want to geocode.
         - latitude, Float
         - longitude, Float
         - components, like [('country', 'CN'), ('administrative_area': 'Helsinki')]
@@ -38,17 +38,17 @@ class GoogleMapsApi(object):
         Optional:
 
         - language
-        
+
         Returns:
         ~~~~~~~~
 
         JSON object
-        
+
         Raises:
         ~~~~~~~
 
         ValueError, Either address or latlon should be provided
-        
+
         """
         components = '|'.join([':'.join(x) for x in (components or [])])
 
