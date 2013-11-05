@@ -1,4 +1,3 @@
-
 Breadtrip lib py
 ================
 
@@ -23,10 +22,10 @@ Please add this directory to your PYTHONPATH by add follow line to your .bashrc:
 
 安装
 
-    pip install -e git+git@github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip 远程库为私有库
-
-
-    或 pip install -e git+https://github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip 远程库为公有库
+    如果远程库为私有库:
+    pip install -e git+git@github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip 
+    如果远程库为公有库:
+    pip install -e git+https://github.com:delongw/breadtrip_lib_py.git@master#egg=breadtrip
 
 卸载
 
